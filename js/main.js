@@ -1,11 +1,15 @@
-/* $('#index__main__div1 a').on('mouseover', function(){
-    $(this).animate({
-        fontSize: "26pt"
-    }, 200)
-});
+$(function(){
+    let $navInvolucrateOculto = $('.navInvolucrate-oculto');
 
-$('#index__main__div1 a').on('mouseout', function(){
-    $(this).animate({
-        fontSize: "24pt"
-    },200)
-}) */
+    $('li.navInvolucrateLi').hover(function(){
+        $navInvolucrateOculto.slideDown(100);
+    }, function(){
+        $navInvolucrateOculto.slideUp(100);
+    });
+
+    $('a.navInvolucrate').on('click', function(e){
+        e.preventDefault();
+    })    
+
+})
+
