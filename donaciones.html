@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Walden | Home</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <a href="index.html" id="navLogo"><img src="multimedia/logos/logo2.png" alt="walden logo" height="55px"></a>
+                <input type="checkbox" id="check">
+                <label for="check" id="checkboton">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li id="homeResponsive"><a href="index.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li class="navInvolucrateLi"><a class="navInvolucrate" href="#">Involucrate</a></span>
+                        <div class="navInvolucrate-oculto">
+                            <a href="involucrate.html">Acciones</a>
+                            <a href="donaciones.html">Donaciones</a>
+                        </div>
+                    </li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="car-li">
+                        <img class="carrito-img" src="multimedia/logos/care.png" alt="" height="40px" width="40px">
+                        <div class="carrito">
+                            <p class="carritoVacio-mensaje">Todavía no has agregado ninguna donación</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Causa</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <button type="button" class="btn btn-dark vaciar-carrito">Vaciar</button>
+                            <button type="button" class="btn btn-success concretar-carrito"><a href="finalizarDonacion.html">Donar</a></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="donaciones">
+        <h1></h1>
+        <div id="donaciones-lista">
+            <div class="carta-donacion" id="1">
+                <div class="donacion-datos">
+                    <img src="multimedia/imagenes/Untitled.png" alt="" height="150px" width="170px">
+                    <h3 class="donacion-datos-titulo">Walden ONG</h3>
+                    <p class="descripcionCorta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero reprehenderit, ab eligendi impedit qui eos!</p>
+                    <p class="descripcionLarga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis dolor pariatur eveniet vitae rerum nesciunt beatae sunt ex praesentium accusantium minima, velit qui corrupti at fuga ea sed dolore, unde repellendus. Non quaerat
+                        facere quia dignissimos doloremque pariatur, magni quisquam neque quae eius dolor ratione recusandae illo exercitationem libero consectetur tempora necessitatibus expedita ad. Pariatur distinctio harum recusandae odio. <br><br>                        <b> Link: </b>
+                        <a href="https://juanmanuelds.github.io/proyecto-final/index.html">Walden ONG</a></p>
+                </div>
+                <div class="donacion-interaccion">
+                    <button class="leerMas-btn">Leer más</button>
+                    <label><b> Cantidad a donar: $</b>
+                    <input type="text" class="cantidad-donar" size="3" maxlength="5"></label><span class="entradaInvalida">&emsp;&larr;Ingrese uno o más números</span><br>
+                    <button class="agregar-btn">Agregar a donaciones</button>
+                    <button class="donar-btn"><a href="finalizarDonacion.html">Donar</a></button>
+                    <button class="leerMenos-btn">Leer menos</button>
+                </div>
+            </div>
+            <div class="carta-donacion" id="2">
+                <div class="donacion-datos">
+                    <img src="multimedia/imagenes/download (1).jpeg" alt="" height="150px" width="150px">
+                    <h3 class="donacion-datos-titulo">WWF</h3>
+                    <p class="descripcionCorta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero reprehenderit, ab eligendi impedit qui eos!</p>
+                    <p class="descripcionLarga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis dolor pariatur eveniet vitae rerum nesciunt beatae sunt ex praesentium accusantium minima, velit qui corrupti at fuga ea sed dolore, unde repellendus. Non quaerat
+                        facere quia dignissimos doloremque pariatur, magni quisquam neque quae eius dolor ratione recusandae illo exercitationem libero consectetur tempora necessitatibus expedita ad. Pariatur distinctio harum recusandae odio. <br><br><b>
+                        Link: </b><a href="https://www.worldwildlife.org/">World Wildlife Fund</a></p>
+                </div>
+                <div class="donacion-interaccion">
+                    <button class="leerMas-btn">Leer más</button>
+                    <label><b> Cantidad a donar: $</b>
+                    <input type="text" class="cantidad-donar" size="3" maxlength="5"></label><span class="entradaInvalida">&emsp;&larr;Ingrese uno o más números</span><br>
+                    <button class="agregar-btn">Agregar a donaciones</button>
+                    <button class="donar-btn"><a href="finalizarDonacion.html">Donar</a></button>
+                    <button class="leerMenos-btn">Leer menos</button>
+                </div>
+            </div>
+            <div class="carta-donacion" id="3">
+                <div class="donacion-datos">
+                    <img src="multimedia/imagenes/saveMovement.png" alt="" height="150px" width="170px">
+                    <h3 class="donacion-datos-titulo">The Save Movement</h3>
+                    <p class="descripcionCorta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero reprehenderit, ab eligendi impedit qui eos!</p>
+                    <p class="descripcionLarga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis dolor pariatur eveniet vitae rerum nesciunt beatae sunt ex praesentium accusantium minima, velit qui corrupti at fuga ea sed dolore, unde repellendus. Non quaerat
+                        facere quia dignissimos doloremque pariatur, magni quisquam neque quae eius dolor ratione recusandae illo exercitationem libero consectetur tempora necessitatibus expedita ad. Pariatur distinctio harum recusandae odio. <br><br>                        <b>Link: </b>
+                        <a href="https://thesavemovement.org/">The Save Movement</a>
+                    </p>
+                </div>
+                <div class="donacion-interaccion">
+                    <button class="leerMas-btn">Leer más</button>
+                    <label><b> Cantidad a donar: $</b>
+                    <input type="text" class="cantidad-donar" size="3" maxlength="5"></label><span class="entradaInvalida">&emsp;&larr;Ingrese uno o más números</span><br>
+                    <button class="agregar-btn">Agregar a donaciones</button>
+                    <button class="donar-btn"><a href="finalizarDonacion.html">Donar</a></button>
+                    <button class="leerMenos-btn">Leer menos</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="row justify-content-center m-0" id="footer">
+
+        <div class="col-xxl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center my-4 footer__contenido pt-2">
+            <p><img src="multimedia/logos/logo3.png" alt="walden logo" height="45px" class="mb-2"><br> Av. Siempre viva 742 <br>Ciudad Autónoma de Buenos Aires <br>Argentina</p>
+        </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center my-4 footer__contenido">
+            <h3 class="my-3">Seguinos en redes</h3>
+
+            <a href="#"><img src="multimedia/logos/facebook.png" alt="facebook logo" height="35px" width="35px"></a>&emsp;
+            <a href="#"><img src="multimedia/logos/twitter.png" alt="twitter logo" height="35px" width="35px"></a>&emsp;
+            <a href="#"><img src="multimedia/logos/instagram.png" alt="instagram logo" height="35px" width="35px"></a>
+        </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center my-4  footer__contenido pt-3">
+            <p>
+                <a href=""><img src="multimedia/logos/email.png" alt="email logo" height="20px" width="20px"> walden@ejemplo.com</a>
+            </p>
+            <p><img src="multimedia/logos/phone-call.png" alt="teléfono" height="20px" width="20px"> +54 9 11555-4444</p>
+            <p>
+                <a href="contacto.html"><img src="multimedia/logos/leaves.png" alt="hojas" height="20px" width="20px"> Contactanos</a>
+            </p>
+        </div>
+        <div class="w-100"></div>
+        <div id="copyright" class="">&copy; 2020 Walden ONG</div>
+        
+
+        <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

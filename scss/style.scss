@@ -8,6 +8,14 @@ a {
     text-decoration: none;
 }
 
+main {
+    margin-top: 80px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
 /*----------------------------SECCIÓN NAV ---------------------------*/
 nav {
     text-decoration: none;
@@ -103,10 +111,60 @@ nav {
         background-color: #839e53;
     }
 
-}
+    .car-ul li {
+        line-height: 70px;
+        color: black;
+        text-transform: none;
+        float: right;
+        div {
+            width: 320px;
+        }
+    }
 
-.container-fluid {
-    padding: 0px;
+    .carrito {
+        display: none;
+        position: fixed;
+        top:80px;
+        background-color: white;
+        z-index: 2;
+        border: solid black 1px;
+        border-radius: 10px;
+        table {
+            width: 100%;
+            display: none;
+        }
+    }
+
+    
+
+    .vaciar-carrito {
+        width: 30%;
+        margin-left: 4%;
+    }
+
+    .concretar-carrito {
+        width: 60%;
+        margin-right: 4%;
+        a {
+            display: inline-block;
+            font-weight: normal;
+            font-size: 1em;
+            text-transform: none;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+
+    .concretar-carrito a:hover {
+        background-color: inherit;
+    }
+
+    .carritoVacio-mensaje {
+        text-align: center;
+        line-height: 25px;
+        margin-top: 20px;
+    }
 }
 
 /*----------------------------------SECCIÓN FOOTER ------------------------------------*/
@@ -134,8 +192,7 @@ nav {
         height: 100vh;
     }
     #index__main__div1 {
-        margin-top: 70px;
-        width: 100%;
+        margin-top: 80px;
         background-image: url(../multimedia/imagenes/principalEditada2.jpg);
         background-size: cover;
         color: white;
@@ -571,6 +628,154 @@ nav {
             border-radius: 10px;
         }
     }   
+}
+
+/*---------------------------SECCIÓN DONACIONES----------------------------*/
+
+#donaciones {
+    background-color: rgb(233, 233, 233);
+
+
+    #donaciones-lista {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        max-width: 1080px;
+        margin: 0px auto;
+        .donacion-interaccion button {
+            margin: 7px 2px;
+        }
+    }
+
+    
+
+    .carta-donacion {
+        max-width: 300px;
+        height: fit-content;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: black 0px 0px 5px;
+        margin: 10px;
+        background-color: white;
+    }
+
+    .carta-donacion a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .carta-donacion .donacion-datos img {
+        display: block;
+        margin: 10px auto 10px auto;
+    }
+
+    .donacion-datos .descripcionLarga {
+        display: none;
+    }
+
+    .entradaInvalida {
+        color: red;
+        font-weight: bold;
+    }
+
+    .donacion-interaccion label,
+    .leerMenos-btn,
+    .donacion-interaccion input,
+    .agregar-btn,
+    .donacion-interaccion br,
+    .donar-btn,
+    .entradaInvalida {
+        display: none;
+    }
+}
+
+/*-----------------------------SECCIÓN PROYECTOS----------------------------------------*/
+
+#proyectos {
+    margin-top: 80px;
+    background-image: url(../multimedia/imagenes/index-div3-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    .proyectos__div {
+        margin: 0px auto 0px auto;
+        padding: 50px 0px 50px 0px;
+        background-color: rgba($color: white, $alpha: .8);
+    }
+    .proyectos__titulos {
+        margin: 0px;
+        text-align: center;
+        h2 {
+            font-size: 20pt;
+            font-weight: bold;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 90px;
+        }
+    }
+    .proyectos__cuerpo {
+        margin: 0px;
+        p {
+            line-height: 26px;
+        }
+        .proyectos__fecha {
+            color: rgb(90, 90, 90);
+            font-size: smaller;
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    #proyectos__div1 {
+        p img {
+            margin: 0px 20px 15px 0px;
+        }
+    }
+    #proyectos__div2 {
+        img {
+            width: 600px;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+    }
+    #proyectos__div3 {
+        #proyectos__div3__divImg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 0px;
+            img {
+                width: 600px;
+                height: 400px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+/*---------------------------------------SECCIÓN CONTACTOS----------------------------------*/
+
+#contacto {
+    margin: 80px 0px 0px 0px;
+    height: 90vh;
+    position: relative;
+    background-image: url(../multimedia/imagenes/contacto-bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #contacto__formulario {
+        border: black solid 5px;
+        border-radius: 25px;
+        position: absolute;
+        height: 85%;
+        width: 80%;
+        max-width: 1366px;
+        background-color: rgba($color: white, $alpha: .6);
+        padding: 40px;
+        font-weight: bold;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 40pt;
+    }
 }
 
 /*--------------------------MEDIA QUERYS------------------------*/
