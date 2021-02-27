@@ -1,7 +1,7 @@
 window.addEventListener('load', ()=>{
 
     let carrito = [];
-    let listaDonaciones = document.querySelector("#donaciones-lista");
+    let listaDonaciones = document.querySelector("div#donaciones-lista");
     let tablaCarrito = document.querySelector('.carrito tbody');
     let vaciarCarr = document.querySelector('.vaciar-carrito');
     let donar = document.querySelector('.concretar-carrito');
@@ -249,10 +249,27 @@ window.addEventListener('load', ()=>{
 
 });
 
-/* $(window).scroll(function () {
-    if($(document).scrollTop() > 60){
-        $('#indexNav').removeClass('noScroll')
-    } else {
-        $('#indexNav').addClass('noScroll')
+$(()=>{
+    
+    let posPrevia = 0,
+    $nav = $('header nav');
+
+    $(window).scroll(function () {
+        $posActual = $(this).scrollTop();
+        navResponsive($posActual);
+    });
+
+    function navResponsive (posActual){
+        if (posActual < posPrevia){
+            $nav.slideDown(300);
+        } else {
+            $nav.slideUp(300);
+        }
+        posPrevia = posActual;
     }
-}) */
+})
+
+
+    /*-----------------ESCONDER/VISIBILIZAR NAV SEGÚN SE SCROLLEE HACIA ARRIBA U ABAJO----------------------*/
+
+
