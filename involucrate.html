@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -52,7 +53,7 @@
             </div>
 
             <div id="involucrate__div2__tarjetas-bg">
-                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div1">
+                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div1" data-aos="fade">
                     <div class="involucrate__div2__encabezado">
                         <h3>Consumo</h3>
                     </div>
@@ -61,7 +62,7 @@
                             impacto que podes hacer por el planeta. </p>
                     </div>
                 </div>
-                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div2">
+                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div2" data-aos="fade" data-aos-delay="100">
                     <div class="involucrate__div2__encabezado">
                         <h3>Plásticos</h3>
                     </div>
@@ -70,7 +71,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div3">
+                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div3" data-aos="fade" data-aos-delay="200">
                     <div class="involucrate__div2__encabezado">
                         <h3>Residuos</h3>
                     </div>
@@ -78,7 +79,7 @@
                         <p>Separá tus residuos en orgánicos, reciclables y basura. Si encontrás una compostera barrial mucho mejor!</p>
                     </div>
                 </div>
-                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div4">
+                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div4" data-aos="fade" data-aos-delay="300">
                     <div class="involucrate__div2__encabezado">
                         <h3>Transporte</h3>
                     </div>
@@ -86,7 +87,7 @@
                         <p>Usá la bicicleta, tu salud y el planeta te lo van a agradecer. En caso de no poder hacerlo por ser una distancia muy larga, utilizar el transporte público. Evadí el uso de vehículos a combustión individuales</p>
                     </div>
                 </div>
-                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div5">
+                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div5" data-aos="fade" data-aos-delay="400">
                     <div class="involucrate__div2__encabezado">
                         <h3>Agua</h3>
                     </div>
@@ -94,7 +95,7 @@
                         <p>Evitá el desperdicio de agua, economizala al máximo posible porque vale más que el oro!</p>
                     </div>
                 </div>
-                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div6">
+                <div class="involucrate__div2__tarjetas" id="involucrate__div2__div6" data-aos="fade" data-aos-delay="500">
                     <div class="involucrate__div2__encabezado">
                         <h3>Energía</h3>
                     </div>
@@ -150,6 +151,15 @@
      <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            /* once: true, */
+            offset: 0,
+            duration: 1000,
+            once: true
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 

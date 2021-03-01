@@ -249,14 +249,18 @@ window.addEventListener('load', ()=>{
 
 });
 
+    /*-----------------ESCONDER/VISIBILIZAR NAV SEGÚN SE SCROLLEE HACIA ARRIBA U ABAJO----------------------*/
 $(()=>{
     
     let posPrevia = 0,
+    $w = $(window)
     $nav = $('header nav');
 
-    $(window).scroll(function () {
+
+    $w.on('scroll', function () {
         $posActual = $(this).scrollTop();
         navResponsive($posActual);
+        mainResponsive($posActual);
     });
 
     function navResponsive (posActual){
@@ -266,10 +270,9 @@ $(()=>{
             $nav.slideUp(300);
         }
         posPrevia = posActual;
-    }
-})
+    };
+});
 
 
-    /*-----------------ESCONDER/VISIBILIZAR NAV SEGÚN SE SCROLLEE HACIA ARRIBA U ABAJO----------------------*/
 
 
