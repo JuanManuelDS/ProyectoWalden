@@ -266,9 +266,9 @@ $(()=>{
 
     function navResponsive (posActual){
         if (posActual < posPrevia){
-            $nav.slideDown(300);
+            $nav.slideDown(200);
         } else {
-            $nav.slideUp(300);
+            $nav.slideUp(200);
         }
         posPrevia = posActual;
     };
