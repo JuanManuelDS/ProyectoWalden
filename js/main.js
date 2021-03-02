@@ -259,7 +259,9 @@ $(()=>{
 
     $w.on('scroll', function () {
         $posActual = $(this).scrollTop();
-        navResponsive($posActual);
+        if($posActual>200){
+            navResponsive($posActual);
+        }
     });
 
     function navResponsive (posActual){

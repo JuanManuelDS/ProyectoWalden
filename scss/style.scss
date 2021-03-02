@@ -587,12 +587,9 @@ nav {
             .involucrate__div2__tarjetas:hover {
                 
                 .involucrate__div2__tarjetasOcultas {
-                    background: rgba(0, 0, 0, .8);
+                    background: rgba(0, 0, 0, 0.9);
                     transition: background ease-in 300ms;
                     left: 0;
-                }
-                .involucrate__div2__encabezado {
-                    background-color: rgba($color: black, $alpha: .8);
                 }
                 img{
                     transform: translateY(20px);

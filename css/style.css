@@ -477,11 +477,9 @@ nav {
             transform: scale(0);
             transition: transform ease-in 300ms; }
       #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas:hover .involucrate__div2__tarjetasOcultas {
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.9);
         transition: background ease-in 300ms;
         left: 0; }
-      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas:hover .involucrate__div2__encabezado {
-        background-color: rgba(0, 0, 0, 0.8); }
       #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas:hover img {
         transform: translateY(20px); }
       #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas:hover h3::after {
