@@ -260,7 +260,6 @@ $(()=>{
     $w.on('scroll', function () {
         $posActual = $(this).scrollTop();
         navResponsive($posActual);
-        mainResponsive($posActual);
     });
 
     function navResponsive (posActual){

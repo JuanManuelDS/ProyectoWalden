@@ -140,158 +140,158 @@ nav {
     width: fit-content; }
 
 /*------------------------------SECCIÓN INDEX--------------------------------------------*/
-#index__main {
-  /*--------------prueba escondido/visible--------------------*/
-  /*-----------fin prueba escondido/visible--------------------*/ }
-  #index__main div {
-    height: 100vh; }
-  #index__main #index__main__div1 {
-    margin-top: 80px;
-    background-image: url(../multimedia/imagenes/principalEditada2.jpg);
-    background-size: cover;
+#index__main div {
+  height: 100vh; }
+
+#index__main #index__main__div1 {
+  margin-top: 80px;
+  background-image: url(../multimedia/imagenes/principalEditada2.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #index__main #index__main__div1 h1 {
+    text-shadow: black 4px 3px 3px;
+    font-size: 50pt;
+    font-weight: bold;
+    max-width: 1366px; }
+  #index__main #index__main__div1 p {
+    padding-top: 40px;
+    width: auto;
+    min-width: 200px;
+    max-width: 1080px;
+    font-size: 20pt;
+    text-shadow: black 3px 2px 2px; }
+  #index__main #index__main__div1 a {
+    text-decoration: none;
     color: white;
-    text-align: center;
+    border: solid white 2px;
+    display: inline-block;
+    padding: 0px 25px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 24pt;
+    text-shadow: black 3px 2px 2px;
+    background-color: rgba(5, 34, 51, 0.4);
+    border-radius: 5px; }
+  #index__main #index__main__div1 a:hover {
+    background-color: rgba(28, 101, 143, 0.8);
+    box-shadow: black 0px 0px 10px;
+    transition-duration: .2s; }
+
+#index__main #index__main__div2 {
+  min-height: 98vh;
+  height: auto;
+  max-height: 240vh;
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  #index__main #index__main__div2 .index-div2-tarjetas {
+    height: 70vh;
+    max-height: 500px;
+    max-width: 320px;
+    width: 30vw;
+    min-width: 300px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    #index__main #index__main__div1 h1 {
-      text-shadow: black 4px 3px 3px;
-      font-size: 50pt;
-      font-weight: bold;
-      max-width: 1366px; }
-    #index__main #index__main__div1 p {
-      padding-top: 40px;
-      width: auto;
-      min-width: 200px;
-      max-width: 1080px;
-      font-size: 20pt;
-      text-shadow: black 3px 2px 2px; }
-    #index__main #index__main__div1 a {
-      text-decoration: none;
-      color: white;
-      border: solid white 2px;
-      display: inline-block;
-      padding: 0px 25px;
-      margin-top: 25px;
-      font-weight: bold;
-      font-size: 24pt;
-      text-shadow: black 3px 2px 2px;
-      background-color: rgba(5, 34, 51, 0.4);
-      border-radius: 5px; }
-    #index__main #index__main__div1 a:hover {
-      background-color: rgba(28, 101, 143, 0.8);
-      box-shadow: black 0px 0px 10px;
-      transition-duration: .2s; }
-  #index__main #index__main__div2 {
-    min-height: 98vh;
-    height: auto;
-    max-height: 240vh;
-    max-width: 1366px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    #index__main #index__main__div2 .index-div2-tarjetas {
-      height: 70vh;
-      max-height: 500px;
-      max-width: 320px;
-      width: 30vw;
-      min-width: 300px;
+    flex-flow: column wrap; }
+    #index__main #index__main__div2 .index-div2-tarjetas .index-div2-img {
+      width: 100%;
+      height: 55%;
       display: flex;
-      flex-flow: column wrap; }
-      #index__main #index__main__div2 .index-div2-tarjetas .index-div2-img {
+      justify-content: center;
+      align-items: center; }
+    #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto {
+      height: 45%;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      padding: 0px 30px; }
+      #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto h2 {
+        font-weight: bold; }
+      #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto a {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        margin: 10px auto 0px auto;
+        padding: 3px 0px;
+        width: 130px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border: black solid 2px;
+        font-size: 17px; }
+      #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto a:hover {
+        transform: scale(1.1);
+        transition-duration: .5s; }
+
+#index__main #index__main__div3 {
+  background-image: url(../multimedia/imagenes/index-div3-bg.jpg);
+  background-size: cover;
+  min-height: 90vh;
+  height: auto;
+  max-height: 220vh;
+  width: 100%; }
+  #index__main #index__main__div3 h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 44pt;
+    font-weight: bold; }
+  #index__main #index__main__div3 #index__main__div3__tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1366px;
+    margin: 50px auto 0px auto; }
+    #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas {
+      margin-top: 30px;
+      height: 80vh;
+      max-height: 600px;
+      width: 28vw;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      color: #0f1b07;
+      padding: 0px;
+      box-shadow: black 0px 0px 2px;
+      background-color: rgba(255, 255, 255, 0.8); }
+      #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas .main__div3__imagenes {
         width: 100%;
         height: 55%;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-      #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto {
+        overflow: hidden; }
+      #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas .main__div3__texto {
         height: 45%;
-        text-align: center;
-        width: 100%;
-        position: relative;
-        padding: 0px 30px; }
-        #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto h2 {
-          font-weight: bold; }
-        #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto a {
+        position: relative; }
+        #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas .main__div3__texto .fecha {
           position: absolute;
-          bottom: 10px;
-          left: 0;
-          right: 0;
-          margin: 10px auto 0px auto;
-          padding: 3px 0px;
-          width: 130px;
-          text-decoration: none;
-          color: black;
-          font-weight: bold;
-          border: black solid 2px;
-          font-size: 17px; }
-        #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto a:hover {
-          transform: scale(1.1);
-          transition-duration: .5s; }
-  #index__main #index__main__div3 {
-    background-image: url(../multimedia/imagenes/index-div3-bg.jpg);
-    background-size: cover;
-    min-height: 90vh;
-    height: auto;
-    max-height: 220vh;
-    width: 100%; }
-    #index__main #index__main__div3 h2 {
-      margin-top: 30px;
-      text-align: center;
-      font-size: 44pt;
-      font-weight: bold; }
-    #index__main #index__main__div3 #index__main__div3__tarjetas {
-      display: flex;
-      flex-wrap: wrap;
-      height: fit-content;
-      justify-content: space-evenly;
-      align-items: center;
-      max-width: 1366px;
-      margin: 50px auto 0px auto; }
-      #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas {
-        margin-top: 30px;
-        height: 80vh;
-        max-height: 600px;
-        width: 28vw;
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        color: #0f1b07;
-        padding: 0px;
-        box-shadow: black 0px 0px 2px;
-        background-color: rgba(255, 255, 255, 0.8); }
-        #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas .main__div3__imagenes {
-          width: 100%;
-          height: 55%;
-          overflow: hidden; }
-        #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas .main__div3__texto {
-          height: 45%;
-          position: relative; }
-          #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas .main__div3__texto .fecha {
-            position: absolute;
-            top: 10px;
-            color: #575555;
-            font-size: 12px; }
-        #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas h3 {
-          margin: 35px 0px 10px 20px;
-          font-weight: bold; }
-        #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas p {
-          padding: 2px 15px 5px 20px; }
-        #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas a {
-          position: absolute;
-          bottom: 20px;
-          right: 20px;
-          color: darkblue; }
-        #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas a:hover {
-          transform: scale(1.1);
-          text-decoration: none;
-          transition-duration: .4s; }
-      #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas:hover {
-        background-color: white;
-        transform: scale(1.05);
-        transition-duration: 0.6s;
-        box-shadow: black 0px 0px 10px; }
+          top: 10px;
+          color: #575555;
+          font-size: 12px; }
+      #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas h3 {
+        margin: 35px 0px 10px 20px;
+        font-weight: bold; }
+      #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas p {
+        padding: 2px 15px 5px 20px; }
+      #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas a {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        color: darkblue; }
+      #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas a:hover {
+        transform: scale(1.1);
+        text-decoration: none;
+        transition-duration: .4s; }
+    #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas:hover {
+      background-color: white;
+      transform: scale(1.05);
+      transition-duration: 0.6s;
+      box-shadow: black 0px 0px 10px; }
 
 /*------------------------SECCIÓN NOSOTROS-------------------------------------*/
 #nosotros__main {
@@ -423,55 +423,71 @@ nav {
       align-items: baseline;
       color: white;
       margin: 0px auto; }
-      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg h3 {
-        margin-top: 15px;
-        font-weight: bold; }
       #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas {
         height: 50vh;
-        max-height: 400px;
+        max-height: 380px;
         width: 30vw;
-        max-width: 400px;
+        max-width: 380px;
         box-shadow: black 0px 0px 8px;
         background-size: cover;
-        margin-top: 30px; }
-        #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas .involucrate__div2__encabezado {
-          height: 20%;
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center; }
+        margin-top: 30px;
+        position: relative;
+        overflow: hidden; }
+        #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas img {
+          height: 400px;
+          width: 400px;
+          position: absolute;
+          top: -20px;
+          transform: translateY(0px);
+          transition: transform ease-in .3s; }
         #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas .involucrate__div2__tarjetasOcultas {
-          display: none;
-          background-color: rgba(0, 0, 0, 0.8);
+          background-color: transparent;
           color: white;
           text-align: center;
-          height: 80%;
+          height: 100%;
           width: 100%;
-          padding: 10px; }
-          #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas .involucrate__div2__tarjetasOcultas p {
-            display: inline-block;
-            font-size: 18px;
+          padding: 10px;
+          position: absolute;
+          display: flex; }
+          #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas .involucrate__div2__tarjetasOcultas h3 {
+            position: relative;
+            font-size: 2em;
+            padding: 0px;
+            width: 80%;
             font-weight: bold;
-            padding: 10px; }
+            margin: 0px auto 0px auto;
+            height: fit-content; }
+          #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas .involucrate__div2__tarjetasOcultas p {
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px;
+            position: absolute;
+            justify-self: center;
+            align-self: center;
+            transform: translateY(350px) scale(0.8);
+            transition: transform ease-out 300ms; }
+          #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas .involucrate__div2__tarjetasOcultas h3::after {
+            content: '';
+            background-color: white;
+            display: block;
+            height: 3px;
+            position: absolute;
+            bottom: -10px;
+            width: 100%;
+            transform: scale(0);
+            transition: transform ease-in 300ms; }
       #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas:hover .involucrate__div2__tarjetasOcultas {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        text-align: center; }
+        background: rgba(0, 0, 0, 0.8);
+        transition: background ease-in 300ms;
+        left: 0; }
       #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas:hover .involucrate__div2__encabezado {
-        background-color: rgba(0, 0, 0, 0.7); }
-      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg #involucrate__div2__div1 {
-        background-image: url(../multimedia/imagenes/involucrate-div2-comida.jpg); }
-      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg #involucrate__div2__div2 {
-        background-image: url(../multimedia/imagenes/involucrate-div2-plasticos.jpg); }
-      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg #involucrate__div2__div3 {
-        background-image: url(../multimedia/imagenes/involucrate-div2-reciclaje.jpg); }
-      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg #involucrate__div2__div4 {
-        background-image: url(../multimedia/imagenes/involucrate-div2-transporte.jpg); }
-      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg #involucrate__div2__div5 {
-        background-image: url(../multimedia/imagenes/involucrate-div2-agua.jpg); }
-      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg #involucrate__div2__div6 {
-        background-image: url(../multimedia/imagenes/involucrate-div2-energia.jpg); }
+        background-color: rgba(0, 0, 0, 0.8); }
+      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas:hover img {
+        transform: translateY(20px); }
+      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas:hover h3::after {
+        transform: scale(1); }
+      #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas:hover p {
+        transform: translateY(0px) scale(1); }
   #involucrate #involucrate__div3 {
     height: 95vh;
     width: 100%;
