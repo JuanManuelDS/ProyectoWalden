@@ -43,7 +43,7 @@ nav {
         border-radius: 4px; }
     nav ul #homeResponsive {
       display: none; }
-  nav li:hover a {
+  nav li:not(.car-li):hover a {
     background-color: #2b4d14;
     text-decoration: none;
     color: white;
@@ -87,43 +87,6 @@ nav {
     background-color: #5c821a; }
   nav .navInvolucrateLi div a:hover {
     background-color: #839e53; }
-  nav .car-ul li {
-    line-height: 70px;
-    color: black;
-    text-transform: none;
-    float: right; }
-    nav .car-ul li div {
-      width: 320px; }
-  nav .carrito {
-    display: none;
-    position: fixed;
-    top: 80px;
-    background-color: white;
-    z-index: 2;
-    border: solid black 1px;
-    border-radius: 10px; }
-    nav .carrito table {
-      width: 100%;
-      display: none; }
-  nav .vaciar-carrito {
-    width: 30%;
-    margin-left: 4%; }
-  nav .concretar-carrito {
-    width: 60%;
-    margin-right: 4%; }
-    nav .concretar-carrito a {
-      display: inline-block;
-      font-weight: normal;
-      font-size: 1em;
-      text-transform: none;
-      height: 100%;
-      width: 100%; }
-  nav .concretar-carrito a:hover {
-    background-color: inherit; }
-  nav .carritoVacio-mensaje {
-    text-align: center;
-    line-height: 25px;
-    margin-top: 20px; }
 
 /*----------------------------------SECCIÓN FOOTER ------------------------------------*/
 #footer {
@@ -560,6 +523,80 @@ nav {
   #donaciones .donar-btn,
   #donaciones .entradaInvalida {
     display: none; }
+
+nav .car-li {
+  line-height: 70px;
+  color: black;
+  text-transform: none;
+  float: right;
+  position: relative; }
+  nav .car-li div.carrito {
+    width: 320px;
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: -50%;
+    /*Chequear responsive en 1024px pq se rompe al achicarse el tamaño de los li (50% pasa a representar menos)*/
+    background-color: white;
+    z-index: 2;
+    border: solid black 1px;
+    border-radius: 10px; }
+    nav .car-li div.carrito p {
+      font-weight: bold;
+      line-height: 25px;
+      text-align: center;
+      padding: 15px; }
+    nav .car-li div.carrito table {
+      width: 100%;
+      display: none;
+      line-height: 20px; }
+      nav .car-li div.carrito table th {
+        line-height: 45px;
+        font-size: 1.1em;
+        font-weight: bold;
+        background: lightgray; }
+      nav .car-li div.carrito table thead tr th:nth-child(2),
+      nav .car-li div.carrito table tr td:nth-child(2) {
+        padding-left: 20px; }
+      nav .car-li div.carrito table tr td:nth-child(3) {
+        text-align: center;
+        font-weight: bold; }
+      nav .car-li div.carrito table tr td:nth-child(4) {
+        width: 25px; }
+      nav .car-li div.carrito table tr {
+        border-bottom: #bbbbbb solid 1px; }
+      nav .car-li div.carrito table tr img {
+        padding: 5px; }
+    nav .car-li div.carrito button.vaciar-carrito {
+      width: 30%;
+      margin-left: 4%; }
+    nav .car-li div.carrito button.concretar-carrito {
+      margin-right: 4%;
+      width: 60%; }
+      nav .car-li div.carrito button.concretar-carrito a {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1em;
+        text-transform: none;
+        height: 100%;
+        width: 100%;
+        padding: 0px; }
+    nav .car-li div.carrito .concretar-carrito a:hover {
+      background-color: inherit;
+      color: white; }
+    nav .car-li div.carrito .carritoVacio-mensaje {
+      text-align: center;
+      line-height: 1.4em;
+      font-size: 1.1em;
+      padding: 20px;
+      margin: 0;
+      font-weight: bold; }
+  nav .car-li button {
+    display: none;
+    height: 40px;
+    font-weight: bold; }
+  nav .car-li button.vaciar-carrito:hover {
+    background-color: #444444; }
 
 /*-----------------------------SECCIÓN PROYECTOS----------------------------------------*/
 #proyectos {

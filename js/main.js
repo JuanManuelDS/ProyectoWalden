@@ -27,6 +27,8 @@ window.addEventListener('load', ()=>{
     //Carga el storage en caso de tener algo
     cargarStorage();
 
+    
+
     listaDonaciones.addEventListener('click', e => {
         if (e.target.classList.contains('leerMas-btn')) {
             leerMas(e.target);
@@ -51,7 +53,7 @@ window.addEventListener('load', ()=>{
             fila.className = 'finalizarDonacion-fila';
             fila.innerHTML = `
             <div>
-                <img src="${carrito.img}" heigth="150" width="150" alt="">
+                <img src="${carrito.img}" heigth="140" width="140" alt="">
              </div>
             <div>
                 <p>${carrito.causa}</p>
@@ -74,6 +76,7 @@ window.addEventListener('load', ()=>{
         localStorage.removeItem('donaciones');
         $('.carritoVacio-mensaje').show(100);
         $('.carrito table').hide(100);
+        $('.car-li button').hide();
     }
 
     function agregarCarrito(target) {
@@ -103,6 +106,7 @@ window.addEventListener('load', ()=>{
             HTMLCarrito();
             $('.carritoVacio-mensaje').hide(100);
             $('.carrito table').show(100);
+            $('.car-li button').show();
             $(`.${target.parentElement.querySelector('.entradaInvalida').className}`).hide(200);
             target.parentElement.querySelector('.cantidad-donar').style.border = 'black solid 1px';
             Swal.fire({
@@ -170,6 +174,9 @@ window.addEventListener('load', ()=>{
             HTMLCarrito();
             $('.carritoVacio-mensaje').hide(100);
             $('.carrito table').show(100);
+            $('.car-li button').show();
+        } else {
+            $('.car-li button').hide();
         }
     }
 
