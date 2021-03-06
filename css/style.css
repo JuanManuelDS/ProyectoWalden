@@ -494,8 +494,22 @@ nav {
     padding: 20px;
     max-width: 1080px;
     margin: 0px auto; }
-    #donaciones #donaciones-lista .donacion-interaccion button {
-      margin: 7px 2px; }
+    #donaciones #donaciones-lista .carta-donacion {
+      height: 380px;
+      position: relative; }
+      #donaciones #donaciones-lista .carta-donacion .donacion-interaccion {
+        /* .leerMenos-btn {
+                    
+                } */ }
+        #donaciones #donaciones-lista .carta-donacion .donacion-interaccion button {
+          margin: 7px 2px;
+          border: solid gray 1px;
+          border-radius: 18px;
+          position: absolute;
+          right: 20px;
+          bottom: 20px; }
+        #donaciones #donaciones-lista .carta-donacion .donacion-interaccion form div input {
+          margin: 10px 2px; }
   #donaciones .carta-donacion {
     max-width: 300px;
     height: fit-content;
@@ -510,20 +524,20 @@ nav {
   #donaciones .carta-donacion .donacion-datos img {
     display: block;
     margin: 10px auto 10px auto; }
-  #donaciones .donacion-datos .descripcionLarga {
-    display: none; }
   #donaciones .entradaInvalida {
     color: red;
     font-weight: bold; }
+  #donaciones .donacion-datos .descripcionLarga,
   #donaciones .donacion-interaccion label,
   #donaciones .leerMenos-btn,
   #donaciones .donacion-interaccion input,
-  #donaciones .agregar-btn,
+  #donaciones .btn-agregar,
   #donaciones .donacion-interaccion br,
-  #donaciones .donar-btn,
+  #donaciones .btn-donar,
   #donaciones .entradaInvalida {
     display: none; }
 
+/*----------------------NAV DE DONACIONES ---------------------------------*/
 nav .car-li {
   line-height: 70px;
   color: black;

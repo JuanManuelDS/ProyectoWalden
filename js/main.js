@@ -34,7 +34,7 @@ window.addEventListener('load', ()=>{
             leerMas(e.target);
         } else if (e.target.classList.contains('leerMenos-btn')) {
             leerMenos(e.target);
-        } else if (e.target.classList.contains('agregar-btn')) {
+        } else if (e.target.classList.contains('btn-agregar')) {
             agregarCarrito(e.target)
         }
     });
@@ -82,10 +82,8 @@ window.addEventListener('load', ()=>{
     function agregarCarrito(target) {
 
         if (verificarEntrada(target)) {
-            let donacionObj = leerDatos(target);
-
-            let donacion = target.parentElement.parentElement;
-            let existe = carrito.some(donacion => donacion.id === donacionObj.id);
+            let donacionObj = leerDatos(target),
+            existe = carrito.some(donacion => donacion.id === donacionObj.id);
 
             if (existe) {
                 //Agregar al carrito una donación ya existente
@@ -107,8 +105,8 @@ window.addEventListener('load', ()=>{
             $('.carritoVacio-mensaje').hide(100);
             $('.carrito table').show(100);
             $('.car-li button').show();
-            $(`.${target.parentElement.querySelector('.entradaInvalida').className}`).hide(200);
-            target.parentElement.querySelector('.cantidad-donar').style.border = 'black solid 1px';
+            $(`.${target.parentElement.parentElement.parentElement.querySelector('.entradaInvalida').className}`).hide(200);
+            target.parentElement.parentElement.parentElement.querySelector('.cantidad-donar').style.border = 'black solid 1px';
             Swal.fire({
                 icon: 'success',
                 title: 'Donación agregada correctamente',
@@ -119,7 +117,7 @@ window.addEventListener('load', ()=>{
     }
 
     function leerDatos(target) {
-        let carta = target.parentElement;
+        let carta = target.parentElement.parentElement.parentElement;
 
         let donacion = {
             img: carta.parentElement.querySelector('img').src,
@@ -184,10 +182,15 @@ window.addEventListener('load', ()=>{
         tablaCarrito.innerHTML = '';
     }
 
+    //Chequear que el usuario haya ingresado un número
+
     function verificarEntrada(target) {
-        if (target.parentElement.querySelector('.cantidad-donar').value === '') {
-            $(`#${target.parentElement.parentElement.id} .${target.parentElement.querySelector('.entradaInvalida').className}`).show(200);
-            target.parentElement.querySelector('.cantidad-donar').style.border = 'solid red 2px';
+
+        let abuelo = target.parentElement.parentElement;
+
+        if (abuelo.querySelector('.cantidad-donar').value === '') {
+            $(`#${abuelo.parentElement.parentElement.id} .${abuelo.querySelector('.entradaInvalida').className}`).show(200);
+            abuelo.querySelector('.cantidad-donar').style.border = 'solid red 2px';
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
@@ -215,18 +218,18 @@ window.addEventListener('load', ()=>{
         carta.animate({
             maxWidth: '600px',
             width: '600px',
-            /* height: '500px' */
+            height: '530px'
         }, 100, () => {
             $('html, body').animate({
-                scrollTop: (carta.offset().top)-90
+                scrollTop: (carta.offset().top)-100
             }, 200)
             carta.find('.donacion-interaccion label').toggle(50);
             carta.find('.donacion-interaccion br').toggle(50);
             carta.find('.leerMenos-btn').toggle(50);
             carta.find('.descripcionLarga').toggle(50);
             carta.find('.donacion-interaccion input').toggle(50);
-            carta.find('.agregar-btn').toggle(50);
-            carta.find('.donar-btn').toggle(50);
+            carta.find('input.btn-agregar').show(50);
+            carta.find('input.btn-donar').show(50);
 
             carta.find('.descripcionCorta').toggle(50);
             carta.find('.leerMas-btn').toggle(50);

@@ -604,9 +604,37 @@ nav {
         padding: 20px;
         max-width: 1080px;
         margin: 0px auto;
-        .donacion-interaccion button {
-            margin: 7px 2px;
+
+        .carta-donacion{
+
+            height: 380px;
+            position: relative;
+
+            .donacion-interaccion{
+                
+
+                button {
+                    margin: 7px 2px;
+                    border: solid gray 1px;
+                    border-radius: 18px;
+                    position: absolute;
+                    right: 20px;
+                    bottom: 20px;
+                }
+
+                /* .leerMenos-btn {
+                    
+                } */
+                form {
+                    div {
+                        input {
+                            margin: 10px 2px;
+                        }
+                    }
+                }
+            }
         }
+        
     }
 
     
@@ -631,25 +659,24 @@ nav {
         margin: 10px auto 10px auto;
     }
 
-    .donacion-datos .descripcionLarga {
-        display: none;
-    }
-
     .entradaInvalida {
         color: red;
         font-weight: bold;
     }
 
+    .donacion-datos .descripcionLarga,
     .donacion-interaccion label,
     .leerMenos-btn,
     .donacion-interaccion input,
-    .agregar-btn,
+    .btn-agregar,
     .donacion-interaccion br,
-    .donar-btn,
+    .btn-donar,
     .entradaInvalida {
         display: none;
     }
 }
+
+/*----------------------NAV DE DONACIONES ---------------------------------*/
 
 nav {
     .car-li {

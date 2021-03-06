@@ -57,8 +57,10 @@
     </header>
 
     <main id="donaciones">
-        <h1></h1>
+        
         <div id="donaciones-lista">
+
+
             <div class="carta-donacion" id="1">
                 <div class="donacion-datos">
                     <img src="multimedia/imagenes/Untitled.png" alt="" height="150px" width="170px">
@@ -70,13 +72,19 @@
                 </div>
                 <div class="donacion-interaccion">
                     <button class="leerMas-btn">Leer más</button>
-                    <label><b> Cantidad a donar: $</b>
-                    <input type="text" class="cantidad-donar" size="3" maxlength="5"></label><span class="entradaInvalida">&emsp;&larr;Ingrese uno o más números</span><br>
-                    <button class="agregar-btn">Agregar a donaciones</button>
-                    <button class="donar-btn"><a href="finalizarDonacion.html">Donar</a></button>
+                    <form action="#" class="formulario">
+                        <label><b> Cantidad a donar: $</b>
+                        <input type="text" class="cantidad-donar" size="3" maxlength="6"></label><span class="entradaInvalida">&emsp;&larr;Ingrese uno o más números</span><br>
+                        <div>
+                            <input type="button" value="Donar" class="btn-donar">
+                            <input type="submit" name="agregar-donacion" class="btn-agregar" value="Agregar Donación">
+                        </div>
+                    </form>
                     <button class="leerMenos-btn">Leer menos</button>
                 </div>
             </div>
+
+
             <div class="carta-donacion" id="2">
                 <div class="donacion-datos">
                     <img src="multimedia/imagenes/download (1).jpeg" alt="" height="150px" width="150px">
