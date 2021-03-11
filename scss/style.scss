@@ -608,60 +608,46 @@ nav {
         .carta-donacion{
 
             height: 380px;
+            max-width: 300px;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: black 0px 0px 5px;
+            margin: 10px;
+            background-color: white;
             position: relative;
 
-            .donacion-interaccion{
-                
+            a {
+                text-decoration: none;
+                color: black;
+            }
 
-                button {
+            .donacion-datos img {
+                display: block;
+                margin: 10px auto 10px auto;
+            }
+
+            .donacion-interaccion{
+
+                button.leerMenos-btn,
+                button.leerMas-btn {
                     margin: 7px 2px;
                     border: solid gray 1px;
                     border-radius: 18px;
-                    position: absolute;
                     right: 20px;
                     bottom: 20px;
+                    position: absolute;
                 }
 
-                /* .leerMenos-btn {
-                    
-                } */
-                form {
-                    div {
-                        input {
-                            margin: 10px 2px;
-                        }
-                    }
+                form div input {
+                    margin: 10px 2px;
                 }
+                .entradaInvalida,
+                .noEsNumero {
+                    color: red;
+                    font-weight: bold;
+                }             
             }
-        }
-        
-    }
-
-    
-
-    .carta-donacion {
-        max-width: 300px;
-        height: fit-content;
-        padding: 15px;
-        border-radius: 15px;
-        box-shadow: black 0px 0px 5px;
-        margin: 10px;
-        background-color: white;
-    }
-
-    .carta-donacion a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .carta-donacion .donacion-datos img {
-        display: block;
-        margin: 10px auto 10px auto;
-    }
-
-    .entradaInvalida {
-        color: red;
-        font-weight: bold;
+        }   
     }
 
     .donacion-datos .descripcionLarga,
@@ -671,9 +657,11 @@ nav {
     .btn-agregar,
     .donacion-interaccion br,
     .btn-donar,
-    .entradaInvalida {
+    .entradaInvalida,
+    .noEsNumero {
         display: none;
     }
+
 }
 
 /*----------------------NAV DE DONACIONES ---------------------------------*/

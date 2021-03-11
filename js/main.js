@@ -106,6 +106,7 @@ window.addEventListener('load', ()=>{
             $('.carrito table').show(100);
             $('.car-li button').show();
             $(`.${target.parentElement.parentElement.parentElement.querySelector('.entradaInvalida').className}`).hide(200);
+            $(`.${target.parentElement.parentElement.parentElement.querySelector('.noEsNumero').className}`).hide(200);
             target.parentElement.parentElement.parentElement.querySelector('.cantidad-donar').style.border = 'black solid 1px';
             Swal.fire({
                 icon: 'success',
@@ -186,19 +187,31 @@ window.addEventListener('load', ()=>{
 
     function verificarEntrada(target) {
 
-        let abuelo = target.parentElement.parentElement;
+        let abuelo = target.parentElement.parentElement,
+        input = abuelo.querySelector('.cantidad-donar').value;
 
-        if (abuelo.querySelector('.cantidad-donar').value === '') {
-            $(`#${abuelo.parentElement.parentElement.id} .${abuelo.querySelector('.entradaInvalida').className}`).show(200);
+        if (input === '') {
+            /* $(`#${abuelo.parentElement.parentElement.id} .${abuelo.querySelector('.entradaInvalida').className}`).show(200); */
+            $(abuelo).find('span.entradaInvalida').show();
             abuelo.querySelector('.cantidad-donar').style.border = 'solid red 2px';
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Por favor ingrese la cantidad a donar en números',
-
+                text: 'Por favor ingrese uno o más números'
             })
             return false;
-        } else return true;
+
+        } else if (isNaN(input)){
+            $(abuelo).find('.noEsNumero').show();
+            abuelo.querySelector('.cantidad-donar').style.border = 'solid red 2px';
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Por favor ingrese el monto a donar en números'
+            })
+            return false;
+        } 
+        else return true;
     }
 
     //Eliminar donaciones individualmente

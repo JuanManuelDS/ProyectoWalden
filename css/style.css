@@ -496,37 +496,33 @@ nav {
     margin: 0px auto; }
     #donaciones #donaciones-lista .carta-donacion {
       height: 380px;
+      max-width: 300px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: black 0px 0px 5px;
+      margin: 10px;
+      background-color: white;
       position: relative; }
-      #donaciones #donaciones-lista .carta-donacion .donacion-interaccion {
-        /* .leerMenos-btn {
-                    
-                } */ }
-        #donaciones #donaciones-lista .carta-donacion .donacion-interaccion button {
-          margin: 7px 2px;
-          border: solid gray 1px;
-          border-radius: 18px;
-          position: absolute;
-          right: 20px;
-          bottom: 20px; }
-        #donaciones #donaciones-lista .carta-donacion .donacion-interaccion form div input {
-          margin: 10px 2px; }
-  #donaciones .carta-donacion {
-    max-width: 300px;
-    height: fit-content;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: black 0px 0px 5px;
-    margin: 10px;
-    background-color: white; }
-  #donaciones .carta-donacion a {
-    text-decoration: none;
-    color: black; }
-  #donaciones .carta-donacion .donacion-datos img {
-    display: block;
-    margin: 10px auto 10px auto; }
-  #donaciones .entradaInvalida {
-    color: red;
-    font-weight: bold; }
+      #donaciones #donaciones-lista .carta-donacion a {
+        text-decoration: none;
+        color: black; }
+      #donaciones #donaciones-lista .carta-donacion .donacion-datos img {
+        display: block;
+        margin: 10px auto 10px auto; }
+      #donaciones #donaciones-lista .carta-donacion .donacion-interaccion button.leerMenos-btn,
+      #donaciones #donaciones-lista .carta-donacion .donacion-interaccion button.leerMas-btn {
+        margin: 7px 2px;
+        border: solid gray 1px;
+        border-radius: 18px;
+        right: 20px;
+        bottom: 20px;
+        position: absolute; }
+      #donaciones #donaciones-lista .carta-donacion .donacion-interaccion form div input {
+        margin: 10px 2px; }
+      #donaciones #donaciones-lista .carta-donacion .donacion-interaccion .entradaInvalida,
+      #donaciones #donaciones-lista .carta-donacion .donacion-interaccion .noEsNumero {
+        color: red;
+        font-weight: bold; }
   #donaciones .donacion-datos .descripcionLarga,
   #donaciones .donacion-interaccion label,
   #donaciones .leerMenos-btn,
@@ -534,7 +530,8 @@ nav {
   #donaciones .btn-agregar,
   #donaciones .donacion-interaccion br,
   #donaciones .btn-donar,
-  #donaciones .entradaInvalida {
+  #donaciones .entradaInvalida,
+  #donaciones .noEsNumero {
     display: none; }
 
 /*----------------------NAV DE DONACIONES ---------------------------------*/
