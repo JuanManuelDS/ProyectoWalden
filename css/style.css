@@ -5,6 +5,9 @@
 a {
   text-decoration: none; }
 
+html {
+  font-size: 16px; }
+
 main {
   margin-top: 80px; }
 
@@ -36,7 +39,7 @@ nav {
       line-height: 80px; }
       nav ul li a {
         color: white;
-        font-size: 17px;
+        font-size: 1.09rem;
         text-transform: uppercase;
         font-weight: bold;
         padding: 7px 13px;
@@ -55,7 +58,7 @@ nav {
   nav #navLogo:hover {
     background: none; }
   nav #checkboton {
-    font-size: 35px;
+    font-size: 2.1rem;
     color: white;
     float: right;
     margin-right: 40px;
@@ -82,7 +85,7 @@ nav {
       border: white solid 1px;
       border-radius: 5px;
       text-align: center;
-      font-size: 16px; }
+      font-size: 1rem; }
   nav .navInvolucrateLi:hover div a {
     background-color: #5c821a; }
   nav .navInvolucrateLi div a:hover {
@@ -91,7 +94,8 @@ nav {
 /*----------------------------------SECCIÓN FOOTER ------------------------------------*/
 #footer {
   background-color: #0f1b07;
-  color: white; }
+  color: white;
+  font-size: 1.1rem; }
   #footer a {
     text-decoration: none;
     color: white;
@@ -99,7 +103,7 @@ nav {
   #footer a:hover {
     color: white; }
   #footer #copyright {
-    font-size: smaller;
+    font-size: .8rem;
     width: fit-content; }
 
 /*------------------------------SECCIÓN INDEX--------------------------------------------*/
@@ -110,6 +114,7 @@ nav {
   margin-top: 80px;
   background-image: url(../multimedia/imagenes/principalEditada2.jpg);
   background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
   display: flex;
@@ -118,15 +123,16 @@ nav {
   align-items: center; }
   #index__main #index__main__div1 h1 {
     text-shadow: black 4px 3px 3px;
-    font-size: 50pt;
+    font-size: 4.2rem;
     font-weight: bold;
-    max-width: 1366px; }
+    max-width: 1366px;
+    padding: 10px 0px; }
   #index__main #index__main__div1 p {
-    padding-top: 40px;
+    padding: 20px 100px 0px 100px;
     width: auto;
     min-width: 200px;
     max-width: 1080px;
-    font-size: 20pt;
+    font-size: 1.7rem;
     text-shadow: black 3px 2px 2px; }
   #index__main #index__main__div1 a {
     text-decoration: none;
@@ -136,7 +142,7 @@ nav {
     padding: 0px 25px;
     margin-top: 25px;
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 2rem;
     text-shadow: black 3px 2px 2px;
     background-color: rgba(5, 34, 51, 0.4);
     border-radius: 5px; }
@@ -174,6 +180,7 @@ nav {
       position: relative;
       padding: 0px 30px; }
       #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto h2 {
+        font-size: 2rem;
         font-weight: bold; }
       #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto a {
         position: absolute;
@@ -187,7 +194,7 @@ nav {
         color: black;
         font-weight: bold;
         border: black solid 2px;
-        font-size: 17px; }
+        font-size: 1.1rem; }
       #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto a:hover {
         transform: scale(1.1);
         transition-duration: .5s; }
@@ -198,11 +205,12 @@ nav {
   min-height: 90vh;
   height: auto;
   max-height: 220vh;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 80px; }
   #index__main #index__main__div3 h2 {
     margin-top: 30px;
     text-align: center;
-    font-size: 44pt;
+    font-size: 3.5rem;
     font-weight: bold; }
   #index__main #index__main__div3 #index__main__div3__tarjetas {
     display: flex;
@@ -211,7 +219,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     max-width: 1366px;
-    margin: 50px auto 0px auto; }
+    margin: 30px auto 0px auto; }
     #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas {
       margin-top: 30px;
       height: 80vh;
@@ -235,7 +243,7 @@ nav {
           position: absolute;
           top: 10px;
           color: #575555;
-          font-size: 12px; }
+          font-size: .75rem; }
       #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas h3 {
         margin: 35px 0px 10px 20px;
         font-weight: bold; }
@@ -284,7 +292,7 @@ nav {
         background-size: 96% 100%;
         height: 100%; }
       #nosotros__main #nosotros__main__div1 #nosotros__div1__bg h1 {
-        font-size: 36pt;
+        font-size: 2.5rem;
         font-weight: bold; }
       #nosotros__main #nosotros__main__div1 #nosotros__div1__bg #nosotros__div1__texto__presentacion {
         line-height: 28px; }
@@ -318,26 +326,27 @@ nav {
         #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__div ol {
           margin-top: 35px;
           padding-left: 60px;
-          text-shadow: black 2px 1px 1px; }
+          text-shadow: black 2px 1px 1px;
+          font-size: 1.15rem; }
         #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__div h2 {
-          font-size: 32pt;
+          font-size: 2.3rem;
           text-shadow: black 3px 1px 1px;
           display: inline-block;
           padding-left: 20px; }
-  #nosotros__main #nostros__main__div3 {
+  #nosotros__main #nosotros__main__div3 {
     height: 70vh;
     position: relative;
     width: 1200px; }
-    #nosotros__main #nostros__main__div3 .nosotros-imgOculta {
+    #nosotros__main #nosotros__main__div3 .nosotros-imgOculta {
       display: none; }
-    #nosotros__main #nostros__main__div3 img {
+    #nosotros__main #nosotros__main__div3 img {
       position: absolute;
       left: 670px;
       top: 80px;
       z-index: 1;
       border-radius: 10px;
       box-shadow: black 0px 0px 15px; }
-    #nosotros__main #nostros__main__div3 div {
+    #nosotros__main #nosotros__main__div3 div {
       position: absolute;
       height: 420px;
       width: 700px;
@@ -348,12 +357,13 @@ nav {
       padding: 2%;
       text-shadow: darkgrey 2px 1px 1px;
       box-shadow: black 0px 0px 15px; }
-      #nosotros__main #nostros__main__div3 div h2 {
-        font-size: 32pt;
+      #nosotros__main #nosotros__main__div3 div h2 {
+        font-size: 2.3re;
         padding: 20px; }
-      #nosotros__main #nostros__main__div3 div ol {
+      #nosotros__main #nosotros__main__div3 div ol {
         padding-left: 50px;
-        margin-top: 15px; }
+        margin-top: 15px;
+        font-size: 1.15rem; }
 
 /*-----------------------------SECCIÓN INVOLUCRATE------------------------------*/
 #involucrate {
@@ -372,7 +382,7 @@ nav {
       color: white;
       text-shadow: black 5px 3px 3px;
       padding: 150px 0px 0px 250px;
-      font-size: 52pt;
+      font-size: 4.5rem;
       font-weight: bold; }
   #involucrate #involucrate__div2 {
     height: fit-content; }
@@ -414,17 +424,18 @@ nav {
           display: flex; }
           #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas .involucrate__div2__tarjetasOcultas h3 {
             position: relative;
-            font-size: 2em;
+            font-size: 2rem;
             padding: 0px;
             width: 80%;
             font-weight: bold;
             margin: 0px auto 0px auto;
             height: fit-content; }
           #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas .involucrate__div2__tarjetasOcultas p {
-            font-size: 1.1em;
+            font-size: 1.1rem;
             font-weight: bold;
             padding: 10px;
             position: absolute;
+            margin-top: 50px;
             justify-self: center;
             align-self: center;
             transform: translateY(350px) scale(0.8);
@@ -452,7 +463,7 @@ nav {
   #involucrate #involucrate__div3 {
     height: 95vh;
     width: 100%;
-    margin: 100px 0px 5px 0px;
+    margin: 100px 0px 1px 0px;
     box-shadow: black 0px 0px 10px;
     background-image: url(../multimedia/imagenes/involucrate-div3.jpg);
     background-size: 100% 100%;
@@ -465,23 +476,23 @@ nav {
       color: white;
       text-shadow: black 3px 2px 2px;
       padding-left: 40px;
-      font-size: 60pt;
+      font-size: 6rem;
       font-weight: bold; }
     #involucrate #involucrate__div3 blockquote {
       margin-top: 30px;
       color: white;
       text-shadow: black 1px 1px 1px;
-      font-size: 20pt;
+      font-size: 2rem;
       font-weight: bold; }
     #involucrate #involucrate__div3 a {
       display: inline-block;
       margin-top: 60px;
       color: white;
       font-weight: bold;
-      font-size: 18pt;
+      font-size: 1.7rem;
       text-decoration: none;
       border: white solid 1px;
-      padding: 3px 9px 3px 9px;
+      padding: 3px 9px;
       background-color: rgba(6, 255, 6, 0.7);
       border-radius: 10px; }
 
@@ -495,7 +506,7 @@ nav {
     max-width: 1080px;
     margin: 0px auto; }
     #donaciones #donaciones-lista .carta-donacion {
-      height: 380px;
+      height: 400px;
       max-width: 300px;
       padding: 15px;
       border-radius: 15px;
@@ -563,7 +574,7 @@ nav .car-li {
       line-height: 20px; }
       nav .car-li div.carrito table th {
         line-height: 45px;
-        font-size: 1.1em;
+        font-size: 1.1rem;
         font-weight: bold;
         background: lightgray; }
       nav .car-li div.carrito table thead tr th:nth-child(2),
@@ -587,7 +598,6 @@ nav .car-li {
       nav .car-li div.carrito button.concretar-carrito a {
         display: inline-block;
         font-weight: bold;
-        font-size: 1em;
         text-transform: none;
         height: 100%;
         width: 100%;
@@ -598,7 +608,7 @@ nav .car-li {
     nav .car-li div.carrito .carritoVacio-mensaje {
       text-align: center;
       line-height: 1.4em;
-      font-size: 1.1em;
+      font-size: 1.1rem;
       padding: 20px;
       margin: 0;
       font-weight: bold; }
@@ -623,7 +633,7 @@ nav .car-li {
     margin: 0px;
     text-align: center; }
     #proyectos .proyectos__titulos h2 {
-      font-size: 20pt;
+      font-size: 1.6rem;
       font-weight: bold;
       position: -webkit-sticky;
       position: sticky;
@@ -674,50 +684,55 @@ nav .car-li {
     font-weight: bold; }
   #contacto h1 {
     font-weight: bold;
-    font-size: 40pt; }
+    font-size: 3rem; }
 
 /*--------------------------MEDIA QUERYS------------------------*/
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 15px; }
+  #index__main #index__main__div1 h1 {
+    padding: 10px 100px; }
+  /*---------NOSOTROS.HTML-----------*/
+  #nosotros__main #nosotros__main__div1 {
+    padding-top: 20px; }
+    #nosotros__main #nosotros__main__div1 #nosotros__div1__bg {
+      height: 85%;
+      width: 90%; }
+  #nosotros__main #nosotros__main__div2,
+  #nosotros__main #nosotros__main__div3 {
+    height: 83vh; }
+  /*---------INVOLUCRATE.HTML------------*/
+  #involucrate #involucrate__div1 h1 {
+    padding: 100px 0px 0px 50px; } }
+
 @media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px; }
   nav ul {
     margin-right: 10px; }
     nav ul li a {
-      font-size: 15px;
       padding: 5px 10px;
       margin: 0px 3px; }
-  #index__main #index__main__div1 h1 {
-    font-size: 40pt; }
-  #index__main #index__main__div1 p {
-    font-size: 17pt; }
-  #index__main #index__main__div1 a {
-    font-size: 20pt; }
   #index__main #index__main__div2 {
     flex-wrap: wrap; }
     #index__main #index__main__div2 .index-div2-tarjetas {
       height: 85vh;
       width: 33vw; }
-      #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto h2 {
-        font-size: 28px; }
-      #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto p {
-        font-size: 15px; }
       #index__main #index__main__div2 .index-div2-tarjetas .index-div2-texto a {
-        font-size: 15px; }
-  #index__main #index__main__div3 h2 {
-    font-size: 32pt; }
-  #index__main #index__main__div3 #index__main__div3__tarjetas {
-    height: 75vh;
-    margin-top: 50px; }
-    #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas {
-      width: 31vw; }
-      #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas .main__div3__texto .fecha {
-        top: 7px; }
-    #index__main #index__main__div3 #index__main__div3__tarjetas h3 {
-      margin: 30px 0px 8px 18px;
-      font-size: 24px; }
-    #index__main #index__main__div3 #index__main__div3__tarjetas p {
-      padding: 2px 15px 5px 18px;
-      font-size: 15px; }
-    #index__main #index__main__div3 #index__main__div3__tarjetas a {
-      bottom: 15px; }
+        bottom: 35px; }
+  #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas {
+    width: 31vw;
+    max-height: 550px; }
+    #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas .main__div3__texto .fecha {
+      top: 7px; }
+  #index__main #index__main__div3 #index__main__div3__tarjetas h3 {
+    margin: 30px 0px 8px 18px;
+    font-size: 24px; }
+  #index__main #index__main__div3 #index__main__div3__tarjetas p {
+    padding: 2px 15px 5px 18px;
+    font-size: 15px; }
+  #index__main #index__main__div3 #index__main__div3__tarjetas a {
+    bottom: 15px; }
   #nosotros__main #nosotros__main__div1 #nosotros__div1__bg {
     width: 90%;
     height: 90%; }
