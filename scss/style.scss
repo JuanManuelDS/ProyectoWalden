@@ -433,7 +433,7 @@ nav {
             box-shadow: black 0px 0px 15px;
             h2 {
                 font-size: 2.3re,;
-                padding: 20px;
+                padding: 20px;   
             }
             ol {
                 padding-left: 50px;
@@ -907,7 +907,7 @@ nav {
 @media screen and (max-width: 1024px) {
 
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     nav {
@@ -934,8 +934,8 @@ nav {
         #index__main__div3 #index__main__div3__tarjetas {
                 
             .main-div3-tarjetas {
-                width: 31vw;
-                max-height: 550px;
+                width: 30vw;
+                max-height: 500px;
                 .main__div3__texto {
                     .fecha {
                         top: 7px;
@@ -957,21 +957,12 @@ nav {
         
     }
     #nosotros__main {
-        #nosotros__main__div1 {
-            #nosotros__div1__bg {
-                width: 90%;
-                height: 90%;
-                #nosotros__div1__texto__presentacion {
-                    line-height: 26px;
-                    font-size: 15px;
-                }
-            }
-        }
+        
         #nosotros__main__div2 {
-            height: 100vh;
+            height: 75vh;
             #nosotros__main__div2__div {
                 width: 90%;
-                height: 90%;
+                height: 80%;
                 #nosotros__main__div2__div__img {
                     img {
                         display: none;
@@ -982,37 +973,43 @@ nav {
                     }
                 }
                 #nosotros__main__div2__div__div {
-                    height: 370px;
-                    width: 480px;
+                    height: 340px;
+                    width: 500px;
+                    left: 45%;
+                    top: 50px;
                     h2 {
-                        font-size: 28pt;
-                        padding-left: 14px;
+                        font-size: 2rem;
+                        padding-left: 10px;
                     }
                     ol {
-                        margin-top: 30px;
-                        padding-left: 45px;
+                        margin-top: 15px;
+                        padding-left: 30px;
+                        font-size: 1.1rem;
                     }
                 }
             }
         }
-        #nostros__main__div3 {
+        #nosotros__main__div3 {
+            width: 90%;
+            height: 75vh;
             img {
                 display: none;
             }
             .nosotros-imgOculta {
                 display: block;
+                left: 48%;
+                top: 50px;
             }
             div {
-                height: 370px;
-                width: 480px;
-                left: 5%;
+                height: 340px;
+                width: 500px;
                 h2 {
-                    font-size: 28pt;
-                    padding: 14px;
+                    font-size: 2rem;
+                    padding: 0px 0px 0px 10px
                 }
                 ol {
-                    padding-left: 45px;
-                    margin-top: 0px;
+                    padding-left: 30px;
+                    font-size: 1.1rem;
                 }
             }
         }
