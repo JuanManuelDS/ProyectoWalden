@@ -22,7 +22,7 @@ window.addEventListener('load', ()=>{
     /*-------------Nav involucrate responsive fin-----------------------*/
 
     /*------------Nav Donaciones responsive---------------- */
-    navDonacionesResponsive();
+   /*  navDonacionesResponsive(); */
 
     /* $(window).on('resize', e =>{
         if($(document).width()<=850 && carLiResponsive===false){
@@ -30,7 +30,7 @@ window.addEventListener('load', ()=>{
         }
     }); */
 
-    function navDonacionesResponsive (){
+   /*  function navDonacionesResponsive (){
         if($(document).width()<=850 && carLiResponsive===false){
             let carLi = $('.car-li'),
             carLiClon = carLi.clone(),
@@ -43,7 +43,7 @@ window.addEventListener('load', ()=>{
         } else{
             carLiResponsive=false
         }
-    }
+    } */
 
     //Muestra/oculta el carrito del nav
     $('.car-li img').on('click', () => {

@@ -805,7 +805,18 @@ nav .car-li {
 
 @media screen and (max-width: 850px) {
   nav div {
-    position: relative; }
+    position: relative;
+    /* .car-li{
+                position: absolute;
+                right: 150px;
+                top: 0px;
+                z-index: 3;
+                div.carrito {
+                   table {
+                       display: none;
+                   }
+                }
+            } */ }
     nav div #checkboton {
       display: block; }
     nav div #check:checked ~ ul {
@@ -844,13 +855,6 @@ nav .car-li {
         border-radius: 0px;
         font-size: 1.2rem;
         line-height: 40px; }
-    nav div .car-li {
-      position: absolute;
-      right: 150px;
-      top: 0px;
-      z-index: 3; }
-      nav div .car-li div.carrito table {
-        display: none; }
   #footer .footer__contenido {
     margin: 20px 0px; }
   #index__main #index__main__div1 {
