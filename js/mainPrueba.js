@@ -1,55 +1,53 @@
-window.addEventListener('load', ()=>{
+window.addEventListener("load", () => {
 
+    let carLiResponsive=false;
+
+  navDonacionesResponsive();
+
+  function navDonacionesResponsive() {
+    if ($(document).width() <= 850 && carLiResponsive === false) {
+      let carLi = $(".car-li"),
+        carLiClon = carLi.clone(),
+        carUl = $('<ul class="car-ul"></ul>');
+      carLiClon.appendTo(carUl);
+      carUl.appendTo("nav div");
+      carLi.remove();
+      console.log(carLiClon);
+      carLiResponsive = true;
+    } else {
+      carLiResponsive = false;
+    }
+  }
+
+  $('li.navInvolucrateLi').hover(function(){
+    $navInvolucrateOculto.slideDown(100);
+}, function(){
+    $navInvolucrateOculto.slideUp(100);
+});
+
+$('a.navInvolucrate').on('click', function(e){
+    e.preventDefault();
+});
+
+  funcionalidades();
+});
+
+function funcionalidades(){
     let carrito = [],
     listaDonaciones = document.querySelector("div#donaciones-lista"),
-    tablaCarrito = document.querySelector('.carrito tbody'),
+    tablaCarrito = document.getElementById('tbody'),
     vaciarCarr = document.querySelector('.vaciar-carrito'),
     donar = document.querySelector('.concretar-carrito'),
     finalizarDonacion = document.querySelector('#finalizarDonacion-lista'),
-    $navInvolucrateOculto = $('.navInvolucrate-oculto'),
-    carLiResponsive = false;
+    $navInvolucrateOculto = $('.navInvolucrate-oculto');
 
-    /*-------------Nav involucrate responsive-----------------------*/
-    $('li.navInvolucrateLi').hover(function(){
-        $navInvolucrateOculto.slideDown(100);
-    }, function(){
-        $navInvolucrateOculto.slideUp(100);
-    });
+    console.log(tablaCarrito);
+    console.log(carrito)
 
-    $('a.navInvolucrate').on('click', function(e){
-        e.preventDefault();
-    });
-    /*-------------Nav involucrate responsive fin-----------------------*/
-
-    /*------------Nav Donaciones responsive---------------- */
-    navDonacionesResponsive();
-
-    /* $(window).on('resize', e =>{
-        if($(document).width()<=850 && carLiResponsive===false){
-            navDonacionesResponsive();
-        }
-    }); */
-
-    function navDonacionesResponsive (){
-        if($(document).width()<=850 && carLiResponsive===false){
-            let carLi = $('.car-li'),
-            carLiClon = carLi.clone(),
-            carUl = $('<ul class="car-ul"></ul>');
-            carLiClon.appendTo(carUl);
-            carUl.appendTo('nav div');
-            carLi.remove();
-            console.log(carLiClon);
-            carLiResponsive= true;
-        } else{
-            carLiResponsive=false
-        }
-    }
-
-    //Muestra/oculta el carrito del nav
     $('.car-li img').on('click', () => {
         $('.carrito').slideToggle();
     });
-    //Carga el storage en caso de tener algo
+
     cargarStorage();
 
     listaDonaciones.addEventListener('click', e => {
@@ -180,7 +178,7 @@ window.addEventListener('load', ()=>{
                 <path class="eliminar-donacion" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
                 </svg>
             </td>`;
-                tablaCarrito.appendChild(fila);
+                document.getElementById('tbody').appendChild(fila);
             });
         }
 
@@ -204,7 +202,7 @@ window.addEventListener('load', ()=>{
     }
 
     function borrarHTMLCarrito() {
-        tablaCarrito.innerHTML = '';
+        document.getElementById('tbody').innerHTML = '';
     }
 
     //Chequear que el usuario haya ingresado un número
@@ -294,35 +292,5 @@ window.addEventListener('load', ()=>{
         })
     }
 
-});
-
-    /*-----------------ESCONDER/VISIBILIZAR NAV SEGÚN SE SCROLLEE HACIA ARRIBA U ABAJO----------------------*/
-$(()=>{
-    
-    let posPrevia = 0,
-    $w = $(window)
-    $nav = $('header nav');
-
-
-    $w.on('scroll', function () {
-        $posActual = $(this).scrollTop();
-        if($posActual>200){
-            navResponsive($posActual);
-        }
-    });
-
-    function navResponsive (posActual){
-        if (posActual < posPrevia){
-            $nav.slideDown(200);
-        } else {
-            $nav.slideUp(200);
-        }
-        posPrevia = posActual;
-    };
-});
-
-
-
-
-
+};
 

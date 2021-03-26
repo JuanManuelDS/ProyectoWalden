@@ -45,7 +45,7 @@
                                         <th></th>
                                     </tr>
                                 </thead>
-                                <tbody></tbody>
+                                <tbody id="tbody"></tbody>
                             </table>
                             <button type="button" class="btn btn-dark vaciar-carrito">Vaciar</button>
                             <button type="button" class="btn btn-success concretar-carrito"><a href="finalizarDonacion.html">Donar</a></button>
@@ -98,7 +98,7 @@
                     <button class="leerMas-btn">Leer más</button>
                     <form action="#" class="formulario">
                         <label><b> Cantidad a donar: $</b>
-                        <input type="text" class="cantidad-donar" size="3" maxlength="6"></label>
+                        <input type="text" class="cantidad-donar" size="3" maxlength="6"><span class="entradaInvalida"> &larr; Ingrese uno o más números</span><span class="noEsNumero"> &larr; Ingrese el valor en números</span></label>
                         <div>
                             <input type="button" value="Donar" class="btn-donar">
                             <input type="submit" name="agregar-donacion" class="btn-agregar" value="Agregar Donación">
@@ -121,7 +121,7 @@
                     <button class="leerMas-btn">Leer más</button>
                     <form action="#" class="formulario">
                         <label><b> Cantidad a donar: $</b>
-                        <input type="text" class="cantidad-donar" size="3" maxlength="6"><span class="entradaInvalida"> &larr; Ingrese uno o más números</span></label>
+                        <input type="text" class="cantidad-donar" size="3" maxlength="6"><span class="entradaInvalida"> &larr; Ingrese uno o más números</span><span class="noEsNumero"> &larr; Ingrese el valor en números</span></label>
                         <div>
                             <input type="button" value="Donar" class="btn-donar">
                             <input type="submit" name="agregar-donacion" class="btn-agregar" value="Agregar Donación">
@@ -163,10 +163,11 @@
         <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
     </footer>
 
+    <script src="https://kit.fontawesome.com/fd81d1e26c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="js/mainPrueba.js"></script>
 </body>
 
 </html>
