@@ -62,7 +62,7 @@ nav {
     color: white;
     float: right;
     margin-right: 40px;
-    line-height: 70px;
+    line-height: 80px;
     cursor: pointer;
     display: none; }
   nav #check {
@@ -202,9 +202,7 @@ nav {
 #index__main #index__main__div3 {
   background-image: url(../multimedia/imagenes/index-div3-bg.jpg);
   background-size: cover;
-  min-height: 90vh;
-  height: auto;
-  max-height: 220vh;
+  height: fit-content;
   width: 100%;
   padding-bottom: 80px; }
   #index__main #index__main__div3 h2 {
@@ -505,7 +503,8 @@ nav {
     flex-wrap: wrap;
     padding: 20px;
     max-width: 1080px;
-    margin: 0px auto; }
+    margin: 0px auto;
+    justify-content: center; }
     #donaciones #donaciones-lista .carta-donacion {
       height: 400px;
       max-width: 300px;
@@ -548,7 +547,7 @@ nav {
 
 /*----------------------NAV DE DONACIONES ---------------------------------*/
 nav .car-li {
-  line-height: 70px;
+  line-height: 80px;
   color: black;
   text-transform: none;
   float: right;
@@ -797,36 +796,65 @@ nav .car-li {
   #involucrate #involucrate__div2 #involucrate__div2__tarjetas-bg .involucrate__div2__tarjetas {
     width: 31vw;
     margin: 20px 5px 0px 5px; }
+  nav .car-li div.carrito {
+    right: -35%; }
   #contacto #contacto__formulario {
     height: 95%;
     width: 95%;
     padding: 20px; } }
 
 @media screen and (max-width: 850px) {
-  nav #checkboton {
-    display: block; }
-  nav #check:checked ~ ul {
-    left: 0;
-    transition: .5s; }
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 70vh;
-    background-color: #2b4d14;
-    top: 70px;
-    text-align: center;
-    left: -100%; }
-    nav ul #homeResponsive {
+  nav div {
+    position: relative;
+    /* .car-li{
+                position: absolute;
+                right: 150px;
+                top: 0px;
+                z-index: 3;
+                div.carrito {
+                   table {
+                       display: none;
+                   }
+                }
+            } */ }
+    nav div #checkboton {
       display: block; }
-    nav ul li {
-      display: block;
-      margin-top: 10px; }
-      nav ul li a {
-        font-size: 20px; }
-  nav ul li a:hover {
-    background: none;
-    color: #0f1b07;
-    transition: .2s; }
+    nav div #check:checked ~ ul {
+      left: 0;
+      transition: .5s; }
+    nav div ul:not(.car-ul) {
+      position: fixed;
+      width: 100%;
+      height: fit-content;
+      background-color: #2b4d14;
+      top: 80px;
+      text-align: center;
+      left: -100%;
+      padding: 0px; }
+      nav div ul:not(.car-ul) #homeResponsive {
+        display: block; }
+      nav div ul:not(.car-ul) li {
+        display: block;
+        margin: 10px 0px 0px 0px; }
+        nav div ul:not(.car-ul) li a {
+          font-size: 1.3rem; }
+      nav div ul:not(.car-ul) li:last-child {
+        margin-bottom: 20px; }
+    nav div ul li a:hover {
+      background: none;
+      color: #0f1b07;
+      transition: .2s; }
+    nav div .navInvolucrate-oculto {
+      position: static;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      height: 100px; }
+      nav div .navInvolucrate-oculto a {
+        border: none;
+        border-radius: 0px;
+        font-size: 1.2rem;
+        line-height: 40px; }
   #footer .footer__contenido {
     margin: 20px 0px; }
   #index__main #index__main__div1 {
@@ -841,32 +869,40 @@ nav .car-li {
       font-size: 21pt;
       transition-duration: .5s; }
   #index__main #index__main__div3 {
+    padding-bottom: 40px;
     background-attachment: fixed;
     margin-bottom: 0px; }
     #index__main #index__main__div3 h2 {
       margin-top: 30px; }
     #index__main #index__main__div3 #index__main__div3__tarjetas {
       margin-bottom: 0px;
-      height: 180vh; }
+      height: fit-content; }
       #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas {
-        margin: 30px 0px;
+        margin: 20px 0px;
         width: 300px; }
-  #nosotros__main #nosotros__main__div1 {
-    height: 150vh; }
+  #nosotros__main #nosotros__main__div1 #nosotros__div1__bg {
+    height: 87%;
+    max-height: 87%; }
     #nosotros__main #nosotros__main__div1 #nosotros__div1__bg #nosotros__div1__imagen {
       height: 40%;
       width: 45%;
       margin: 5px auto 5px auto; }
-    #nosotros__main #nosotros__main__div1 #nosotros__div1__bg #nosotros__div1__texto__presentacion {
+    #nosotros__main #nosotros__main__div1 #nosotros__div1__bg #nosotros__div1__texto h1 {
+      margin-bottom: 0px;
+      padding: 5px; }
+    #nosotros__main #nosotros__main__div1 #nosotros__div1__bg #nosotros__div1__texto div.p-3 {
+      padding: 0px; }
+    #nosotros__main #nosotros__main__div1 #nosotros__div1__bg #nosotros__div1__texto #nosotros__div1__texto__presentacion {
       margin-top: 0px;
-      font-size: 15px;
+      font-size: 1rem;
       line-height: 25px; }
   #nosotros__main #nosotros__main__div2 {
-    height: fit-content; }
+    height: fit-content;
+    margin-bottom: 80px; }
     #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div {
-      width: 80%;
+      width: 85%;
       height: fit-content; }
-      #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div .nosotros-imgOculta {
+      #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__img .nosotros-imgOculta {
         display: none; }
       #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__div {
         position: static;
@@ -874,27 +910,30 @@ nav .car-li {
         height: fit-content;
         margin-bottom: 40px; }
         #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__div h2 {
+          display: block;
           text-align: center; }
-  #nosotros__main #nostros__main__div3 {
+  #nosotros__main #nosotros__main__div3 {
     height: fit-content;
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: center;
-    align-items: center; }
-    #nosotros__main #nostros__main__div3 img {
+    align-items: center;
+    padding-bottom: 60px; }
+    #nosotros__main #nosotros__main__div3 img {
       display: none; }
-    #nosotros__main #nostros__main__div3 .nosotros-imgOculta {
+    #nosotros__main #nosotros__main__div3 .nosotros-imgOculta {
       display: none; }
-    #nosotros__main #nostros__main__div3 div {
+    #nosotros__main #nosotros__main__div3 div {
       position: static;
       height: fit-content;
       width: 100%;
       margin: 20px 0px; }
-      #nosotros__main #nostros__main__div3 div h2 {
+      #nosotros__main #nosotros__main__div3 div h2 {
         text-align: center; }
   #involucrate #involucrate__div1 {
     height: 100vh;
     background-size: cover;
+    background-position: center;
     justify-content: flex-start;
     align-items: flex-end; }
     #involucrate #involucrate__div1 h1 {
