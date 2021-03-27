@@ -21,30 +21,6 @@ window.addEventListener('load', ()=>{
     });
     /*-------------Nav involucrate responsive fin-----------------------*/
 
-    /*------------Nav Donaciones responsive---------------- */
-   /*  navDonacionesResponsive(); */
-
-    /* $(window).on('resize', e =>{
-        if($(document).width()<=850 && carLiResponsive===false){
-            navDonacionesResponsive();
-        }
-    }); */
-
-   /*  function navDonacionesResponsive (){
-        if($(document).width()<=850 && carLiResponsive===false){
-            let carLi = $('.car-li'),
-            carLiClon = carLi.clone(),
-            carUl = $('<ul class="car-ul"></ul>');
-            carLiClon.appendTo(carUl);
-            carUl.appendTo('nav div');
-            carLi.remove();
-            console.log(carLiClon);
-            carLiResponsive= true;
-        } else{
-            carLiResponsive=false
-        }
-    } */
-
     //Muestra/oculta el carrito del nav
     $('.car-li img').on('click', () => {
         $('.carrito').slideToggle();
