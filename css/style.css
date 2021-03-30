@@ -958,32 +958,36 @@ nav .car-li {
     background-size: cover;
     background-position: center; } }
 
-@media screen and (max-height: 586px) {
-  nav ul {
-    top: 70px;
-    height: 100vh; } }
+@media screen and (max-width: 770px) {
+  #proyectos #proyectos__div2 img,
+  #proyectos #proyectos__div3 #proyectos__div3__divImg img {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 450px) {
+  #contacto #contacto__formulario {
+    border-radius: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%; }
+    #contacto #contacto__formulario textarea {
+      width: 100%; } }
 
 @media screen and (max-width: 400px) {
   nav #navLogo {
     margin-left: 12px; }
   nav #checkboton {
     margin-right: 18px; }
-  #index__main #index__main__div1 {
-    height: 75vh;
-    background-size: cover; }
-    #index__main #index__main__div1 h1 {
-      font-size: 35px;
-      margin: 20px; }
-    #index__main #index__main__div1 p {
-      margin: 10px;
-      font-size: 20px; }
-    #index__main #index__main__div1 a {
-      font-size: 20px; }
-    #index__main #index__main__div1 a:hover {
-      font-size: 22px; }
-  #index__main #index__main__div2 .index-div2-tarjetas {
-    height: 55vh;
-    margin-top: 20px; }
+  #index__main #index__main__div1 h1 {
+    font-size: 2.3rem;
+    padding: 5px 0px; }
+  #index__main #index__main__div1 p {
+    padding: 10px 50px 0px 50px;
+    font-size: 20px; }
+  #index__main #index__main__div1 a {
+    font-size: 20px; }
+  #index__main #index__main__div1 a:hover {
+    font-size: 22px; }
   #index__main #index__main__div3 {
     background-repeat: no-repeat; }
     #index__main #index__main__div3 #index__main__div3__tarjetas {
@@ -992,4 +996,48 @@ nav .car-li {
       #index__main #index__main__div3 #index__main__div3__tarjetas .main-div3-tarjetas {
         height: 60vh;
         width: 90vw;
-        margin-top: 15px; } }
+        margin-top: 15px; }
+  #nosotros__main #nosotros__main__div1 {
+    height: fit-content;
+    margin-bottom: 80px; }
+    #nosotros__main #nosotros__main__div1 #nosotros__div1__bg {
+      height: fit-content;
+      max-height: fit-content; }
+      #nosotros__main #nosotros__main__div1 #nosotros__div1__bg #nosotros__div1__imagen {
+        height: 250px;
+        width: 250px; }
+  #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div {
+    width: 90%; }
+    #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__div {
+      position: static;
+      width: 100%;
+      height: fit-content;
+      margin-bottom: 20px;
+      padding: 3%; }
+      #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__div h2 {
+        display: block;
+        text-align: center; }
+  #nosotros__main #nosotros__main__div3 {
+    height: fit-content;
+    width: 90%; }
+    #nosotros__main #nosotros__main__div3 div {
+      position: static;
+      height: fit-content;
+      width: 100%;
+      margin: 20px 0px;
+      padding: 3%; }
+      #nosotros__main #nosotros__main__div3 div h2 {
+        text-align: center; }
+  #involucrate #involucrate__div3 {
+    height: 80vh; }
+    #involucrate #involucrate__div3 h1 {
+      font-size: 5rem;
+      padding: 10px 0px;
+      text-align: center; }
+    #involucrate #involucrate__div3 blockquote {
+      margin-top: 20px;
+      font-size: 1.8rem; }
+  nav .car-li div.carrito {
+    right: -135px; }
+  #proyectos #proyectos__div1 p img {
+    width: 100%; } }
