@@ -6,8 +6,7 @@ window.addEventListener('load', ()=>{
     vaciarCarr = document.querySelector('.vaciar-carrito'),
     donar = document.querySelector('.concretar-carrito'),
     finalizarDonacion = document.querySelector('#finalizarDonacion-lista'),
-    $navInvolucrateOculto = $('.navInvolucrate-oculto'),
-    carLiResponsive = false;
+    $navInvolucrateOculto = $('.navInvolucrate-oculto');
 
     /*-------------Nav involucrate responsive-----------------------*/
     $('li.navInvolucrateLi').hover(function(){

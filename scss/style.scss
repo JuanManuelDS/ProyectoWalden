@@ -1301,17 +1301,33 @@ nav {
             background-position: center;
         }
     }
+}   
 
-}
-
-@media screen and (max-height: 586px) {
-    nav {
-        ul {
-            top: 70px;
-            height: 100vh;
+@media screen and (max-width: 770px){
+    #proyectos {
+        #proyectos__div2 img,
+        #proyectos__div3 #proyectos__div3__divImg img{
+            width: 100%;
+            height: auto;
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    #contacto {
+        #contacto__formulario {
+            border-radius: 0px;
+            border: 0px;
+            width: 100%;
+            height: 100%;
+
+            textarea {
+                width: 100%;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 400px) {
     nav {
@@ -1324,14 +1340,13 @@ nav {
     }
     #index__main {
         #index__main__div1 {
-            height: 75vh;
-            background-size: cover;
+            
             h1 {
-                font-size: 35px;
-                margin: 20px;
+                font-size: 2.3rem;
+                padding: 5px 0px;
             }
             p {
-                margin: 10px;
+                padding: 10px 50px 0px 50px;
                 font-size: 20px;
             }
             a {
@@ -1341,12 +1356,7 @@ nav {
                 font-size: 22px;
             }
         }
-        #index__main__div2 {
-            .index-div2-tarjetas {
-                height: 55vh;
-                margin-top: 20px;
-            }
-        }
+       
         #index__main__div3 {
             background-repeat: no-repeat;
             #index__main__div3__tarjetas {
@@ -1360,4 +1370,80 @@ nav {
             }
         }
     }
+
+    #nosotros__main {
+        #nosotros__main__div1{
+            height: fit-content;
+            margin-bottom: 80px;
+            #nosotros__div1__bg{
+                height: fit-content;
+                max-height: fit-content;
+                #nosotros__div1__imagen {
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+        }
+        #nosotros__main__div2 {
+
+            #nosotros__main__div2__div {
+                width: 90%;
+                
+                #nosotros__main__div2__div__div {
+                    position: static;
+                    width: 100%;
+                    height: fit-content;
+                    margin-bottom: 20px;
+                    padding: 3%;
+                    h2 {
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        #nosotros__main__div3 {
+            height: fit-content;
+            width: 90%;
+
+            div {
+                position: static;
+                height: fit-content;
+                width: 100%;
+                margin: 20px 0px;
+                padding: 3%;
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #involucrate {
+
+        #involucrate__div3 {
+            height: 80vh;
+            h1{
+                font-size: 5rem;
+                padding: 10px 0px;
+                text-align: center;
+            }
+            blockquote {
+                margin-top: 20px;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    nav .car-li div.carrito {
+        right: -135px;
+    }
+
+    #proyectos {
+
+        #proyectos__div1 p img {
+            width: 100%;
+        }
+    }
+
 }
