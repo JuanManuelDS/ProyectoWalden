@@ -294,74 +294,55 @@ nav {
         font-weight: bold; }
       #nosotros__main #nosotros__main__div1 #nosotros__div1__bg #nosotros__div1__texto__presentacion {
         line-height: 28px; }
-  #nosotros__main #nosotros__main__div2 {
-    height: 70vh;
-    display: flex;
-    justify-content: center; }
-    #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div {
-      width: 1200px;
-      position: relative; }
-      #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__img {
-        position: absolute;
-        z-index: 1; }
-        #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__img img {
-          border-radius: 10px;
-          box-shadow: black 0px 0px 15px; }
-        #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__img .nosotros-imgOculta {
-          display: none; }
-      #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__div {
-        position: absolute;
-        background-color: #5c821a;
-        border-radius: 10px;
-        color: white;
-        padding: 2%;
-        height: 420px;
-        width: 700px;
-        top: 80px;
-        left: 500px;
-        z-index: 2;
-        box-shadow: black 0px 0px 15px; }
-        #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__div ol {
-          margin-top: 35px;
-          padding-left: 60px;
-          text-shadow: black 2px 1px 1px;
-          font-size: 1.15rem; }
-        #nosotros__main #nosotros__main__div2 #nosotros__main__div2__div #nosotros__main__div2__div__div h2 {
-          font-size: 2.3rem;
-          text-shadow: black 3px 1px 1px;
-          display: inline-block;
-          padding-left: 20px; }
-  #nosotros__main #nosotros__main__div3 {
+  #nosotros__main #nosotros__main__div2, #nosotros__main #nosotros__main__div3 {
     height: 70vh;
     position: relative;
     width: 1200px; }
-    #nosotros__main #nosotros__main__div3 .nosotros-imgOculta {
+    #nosotros__main #nosotros__main__div2 .nosotros-imgOculta, #nosotros__main #nosotros__main__div3 .nosotros-imgOculta {
       display: none; }
-    #nosotros__main #nosotros__main__div3 img {
+    #nosotros__main #nosotros__main__div2 img, #nosotros__main #nosotros__main__div3 img {
       position: absolute;
-      left: 670px;
-      top: 80px;
       z-index: 1;
       border-radius: 10px;
       box-shadow: black 0px 0px 15px; }
-    #nosotros__main #nosotros__main__div3 div {
+    #nosotros__main #nosotros__main__div2 div, #nosotros__main #nosotros__main__div3 div {
       position: absolute;
       height: 420px;
       width: 700px;
-      z-index: 2;
-      background-color: #c6d166;
-      border-radius: 10px;
-      color: black;
       padding: 2%;
-      text-shadow: darkgrey 2px 1px 1px;
+      z-index: 2;
+      border-radius: 10px;
       box-shadow: black 0px 0px 15px; }
-      #nosotros__main #nosotros__main__div3 div h2 {
-        font-size: 2.3re;
-        padding: 20px; }
-      #nosotros__main #nosotros__main__div3 div ol {
-        padding-left: 50px;
-        margin-top: 15px;
-        font-size: 1.15rem; }
+  #nosotros__main #nosotros__main__div2 div {
+    background-color: #5c821a;
+    color: white;
+    top: 80px;
+    left: 500px; }
+    #nosotros__main #nosotros__main__div2 div ol {
+      margin-top: 35px;
+      padding-left: 60px;
+      text-shadow: black 2px 1px 1px;
+      font-size: 1.15rem; }
+    #nosotros__main #nosotros__main__div2 div h2 {
+      font-size: 2.3rem;
+      text-shadow: black 3px 1px 1px;
+      display: inline-block;
+      padding-left: 20px; }
+  #nosotros__main #nosotros__main__div3 img {
+    left: 670px;
+    top: 80px; }
+  #nosotros__main #nosotros__main__div3 div {
+    background-color: #c6d166;
+    color: black;
+    text-shadow: darkgrey 2px 1px 1px;
+    box-shadow: black 0px 0px 15px; }
+    #nosotros__main #nosotros__main__div3 div h2 {
+      font-size: 2.3rem;
+      padding: 20px; }
+    #nosotros__main #nosotros__main__div3 div ol {
+      padding-left: 50px;
+      margin-top: 15px;
+      font-size: 1.15rem; }
 
 /*-----------------------------SECCIÓN INVOLUCRATE------------------------------*/
 #involucrate {
